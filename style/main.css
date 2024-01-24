@@ -1,0 +1,165 @@
+/* css do projeto final */
+
+
+/* modelos repetidos */
+
+.cyan-box{
+    display: block;
+    box-sizing: border-box;
+    background-color: rgb(99, 198, 174);
+    text-decoration:solid;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.button-format{
+    display: flex;
+    box-sizing: border-box;
+
+    justify-content: center;
+    align-items: center;
+
+    margin: auto;
+
+    height: 50px;
+    width: 150px;
+
+    border: solid .3px #ccc;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'open sans'
+}
+
+/* começa estilização do header */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: solid  ;
+    background-color: #FFF;
+}
+/* começa style do Logo */
+#home-tittle{
+    position: fixed;
+    padding: 20px;
+    width: 40%;
+    height: 70px;
+
+    font-family: 'open sans';
+    color: #FFF;
+}
+
+header button{
+    position: fixed;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 70px;
+    height: 69px;
+    right: 0;
+
+    font-size: 25px;
+
+    border: none;
+    background-color: #FFF;
+}
+/* termina estilização do header e começa do menu suspenso */
+.menu{
+    margin-top: 70px;
+    background-color: #233238;
+}
+
+.menu-list{
+    display: block;
+    width: 100%;
+    height: 361px;
+    overflow: hidden;
+    text-align: center;
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    transition: all .5s;
+    overflow: hidden;
+}
+
+.menu-list li{
+    margin: 0;
+    padding: 0;
+    height: 60px;
+}
+
+.menu-list a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    
+    height: 40px;
+    width: 100%;  
+    padding: 10px;
+    
+    font-family: 'open sans';
+    text-transform: uppercase;
+    color: #ccc;
+    border-bottom: dotted .5px #ccc
+}
+/* termina style do  menu e começa efeito do menu */
+.start-menu-effect .menu-list{
+    height: 0px;
+}
+/* termina efeito e começa hero banner */
+
+#hero-banner{
+
+    padding-top: 80px;
+    height: 425px;
+    width: 100%;
+
+    background-image: url(../img/herobg.jpg);
+    background-position: -100px, 0px;
+    background-size: cover;
+}
+
+.hero-tittle{
+    width: 90%;
+    margin: auto;
+    color:#FFF;
+    padding: 35px 5%;
+    text-align: center;
+    font-family: 'open sans';
+    line-height: 40px;
+    letter-spacing: 2px;
+}
+
+#hero-adittional-text{
+    background-color: #242a2c;
+    display: block;
+    box-sizing: border-box;
+    width: 75%;
+    margin: 20px auto;
+    
+    padding: 30px;
+    color: #ccc;
+    font-family: 'sintony';
+    text-align: center;
+}
+
+#hero-button{
+    margin-top: 30px;
+    background-color: #242a2c4b;
+}
+
+
+#hero-banner img{
+    display: block;
+    margin: 41px auto 0;
+}
+
+
+
+.laptop-slide img{
+    height: 50px;
+}
