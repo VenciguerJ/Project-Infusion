@@ -158,8 +158,24 @@ header button{
     margin: 41px auto 0;
 }
 
-
-
 .laptop-slide img{
     height: 50px;
 }
+
+.people-banner{
+    display: block;
+    margin: auto;
+    width: 90%;
+}
+
+.people-icon{
+    display: block;
+    box-sizing: border-box;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    clip: rect(0, 100px, 200px, 0);
+    overflow: hidden;
+    
+}
+
