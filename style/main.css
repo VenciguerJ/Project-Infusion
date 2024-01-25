@@ -3,6 +3,19 @@
 
 /* modelos repetidos */
 
+.default-text{
+    font-family: 'open sans';
+}
+
+.alternative-text{
+    font-family: 'sintony';
+}
+
+.centralized-text{
+    text-align: center;
+}
+
+
 .cyan-box{
     display: block;
     box-sizing: border-box;
@@ -15,20 +28,15 @@
 .button-format{
     display: flex;
     box-sizing: border-box;
-
     justify-content: center;
     align-items: center;
-
     margin: auto;
-
     height: 50px;
     width: 150px;
-
     border: solid .3px #ccc;
     border-radius: 5px;
     text-decoration: none;
     color: #fff;
-    font-family: 'open sans'
 }
 
 /* começa estilização do header */
@@ -46,8 +54,6 @@ header{
     padding: 20px;
     width: 40%;
     height: 70px;
-
-    font-family: 'open sans';
     color: #FFF;
 }
 
@@ -58,9 +64,7 @@ header button{
     width: 70px;
     height: 69px;
     right: 0;
-
     font-size: 25px;
-
     border: none;
     background-color: #FFF;
 }
@@ -76,11 +80,9 @@ header button{
     height: 361px;
     overflow: hidden;
     text-align: center;
-
     list-style: none;
     padding: 0;
     margin: 0;
-
     transition: all .5s;
     overflow: hidden;
 }
@@ -96,11 +98,9 @@ header button{
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    
     height: 40px;
     width: 100%;  
     padding: 10px;
-    
     font-family: 'open sans';
     text-transform: uppercase;
     color: #ccc;
@@ -111,25 +111,20 @@ header button{
     height: 0px;
 }
 /* termina efeito e começa hero banner */
-
 #hero-banner{
-
     padding-top: 80px;
     height: 425px;
     width: 100%;
-
     background-image: url(../img/herobg.jpg);
     background-position: -100px, 0px;
     background-size: cover;
 }
-
 .hero-tittle{
     width: 90%;
     margin: auto;
     color:#FFF;
     padding: 35px 5%;
-    text-align: center;
-    font-family: 'open sans';
+    text-align: center; 
     line-height: 40px;
     letter-spacing: 2px;
 }
@@ -143,7 +138,6 @@ header button{
     
     padding: 30px;
     color: #ccc;
-    font-family: 'sintony';
     text-align: center;
 }
 
@@ -151,7 +145,6 @@ header button{
     margin-top: 30px;
     background-color: #242a2c4b;
 }
-
 
 #hero-banner img{
     display: block;
@@ -164,18 +157,24 @@ header button{
 
 .people-banner{
     display: block;
-    margin: auto;
+    margin:  20px auto 0;
     width: 90%;
+}
+
+.people-after{
+    width: 80%;
+    margin: 0 auto 0;
 }
 
 .people-icon{
     display: block;
     box-sizing: border-box;
-    margin: auto;
+    margin: -50px auto 0;
     width: 100px;
     height: 100px;
-    clip: rect(0, 100px, 200px, 0);
-    overflow: hidden;
-    
+    overflow: hidden; 
 }
 
+.people-image{
+    width: 100%;
+}
