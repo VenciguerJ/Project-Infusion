@@ -1,4 +1,26 @@
 /* css do projeto final */
+/* definindo padrões */
+
+html{
+    font-size: 10px;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2.5rem;
+}
+
+h3{
+    font-size: 2rem
+}
+
+p{
+    font-size: 1.5rem;
+}
+
 /* modelos repetidos */
 
 .default-text{
@@ -34,29 +56,11 @@
     border: solid .3px #ccc;
     border-radius: 5px;
     text-decoration: none;
-}
-
-/* definindo padrões */
-
-html{
-    font-size: 10px;
-}
-
-h1{
-    font-size: 3rem;
-}
-
-h2{
-    font-size: 2.5rem;
-}
-
-h3{
-    font-size: 2rem
-}
-
-p{
     font-size: 1.5rem;
+    text-align: center;
+    padding: 15px;
 }
+
 
 /* começa estilização do header */
 header{
@@ -71,7 +75,7 @@ header{
 #home-tittle{
     position: fixed;
     padding: 20px;
-    width: 40%;
+    width: 165px;
     height: 70px;
     font-weight: bolder;
     color: #FFF;
@@ -230,8 +234,45 @@ header button{
     text-align: justify;
 }
 
+.light-button{
+    display: inline-block;
+    background-color: rgb(99, 198, 174);
+    color: #FFF;
+    border: none;
+    font-weight: bolder;
+}
+
+.dark-button{
+    display: inline-block;
+    background-color: #455357;
+    color: #FFF;
+    font-weight: bolder;
+}
+
+.images-tittle{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    font-weight: normal;
+    color: #FFF;
+}
+
+.images{
+    width: 100%;
+}
+
+.images a img{
+    width: 100%;
+}
+
 /* laptop section */
 .laptop-slide img{ 
-    height: 50px;
+    height: auto;
+    width: 100%;
+}
+
+.laptop-slide figure{
+    
 }
 
