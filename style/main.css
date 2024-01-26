@@ -1,6 +1,4 @@
 /* css do projeto final */
-
-
 /* modelos repetidos */
 
 .default-text{
@@ -36,7 +34,28 @@
     border: solid .3px #ccc;
     border-radius: 5px;
     text-decoration: none;
-    color: #fff;
+}
+
+/* definindo padrões */
+
+html{
+    font-size: 10px;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2.5rem;
+}
+
+h3{
+    font-size: 2rem
+}
+
+p{
+    font-size: 1.5rem;
 }
 
 /* começa estilização do header */
@@ -54,6 +73,7 @@ header{
     padding: 20px;
     width: 40%;
     height: 70px;
+    font-weight: bolder;
     color: #FFF;
 }
 
@@ -67,6 +87,7 @@ header button{
     font-size: 25px;
     border: none;
     background-color: #FFF;
+    
 }
 /* termina estilização do header e começa do menu suspenso */
 .menu{
@@ -144,20 +165,18 @@ header button{
 #hero-button{
     margin-top: 30px;
     background-color: #242a2c4b;
+    color: #FFF;
+    font-size: 1.6em
 }
 
 #hero-banner img{
     display: block;
-    margin: 41px auto 0;
-}
-
-.laptop-slide img{
-    height: 50px;
+    margin: 43px auto 0;
 }
 
 .people-banner{
     display: block;
-    margin:  20px auto 0;
+    margin:  50px auto 0;
     width: 90%;
 }
 
@@ -178,3 +197,41 @@ header button{
 .people-image{
     width: 100%;
 }
+
+.people-tittle{
+    font-weight: lighter;
+    color: #8b8b8b;
+    margin-top: 0px;
+    font-size: 2rem;
+}
+
+.people-description{
+    color: #5e5e5e;
+    font-size: 1.2rem;
+    letter-spacing: 1.1px;
+}
+
+/* button section */
+
+.section-button-format{
+    display: block;
+    margin:80px auto;
+    width: 90%;
+}
+
+.button-tittle{
+    color: #5e5e5e;
+    font-weight:lighter;
+}
+
+.button-text{
+    font-size: 1.5rem;
+    color: #8a8a8a;
+    text-align: justify;
+}
+
+/* laptop section */
+.laptop-slide img{ 
+    height: 50px;
+}
+
