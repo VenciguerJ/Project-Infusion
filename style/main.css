@@ -62,6 +62,27 @@ p{
     padding: 15px;
 }
 
+.arrow{
+    color: #FFF;
+    font-size: 4rem;
+}
+
+.arrow-next{
+    position: absolute;
+    right: 10px;
+}
+
+.arrow-prev{
+    position: absolute;
+    left: 10px;
+}
+
+.hidden{
+    visibility: hidden;
+    opacity: 0;
+    overflow: hidden;
+}
+
 
 /* começa estilização do header */
 header{
@@ -305,17 +326,49 @@ header button{
     object-fit: cover;
 }
 
-.slide{
+/* text section */
+
+.text {
+    height: auto;
+    margin-bottom: auto;
+    display: flex;
+    align-items: center;
     color: #FFF;
-    font-size: 4rem;
+    border: solid
+
 }
 
-.slide-next{
-    position: absolute;
-    right: 10px;
+
+
+.text-partition{
+    width: 77%;
+    display: block;
+    margin: 50px auto 0;
+    font-size: 1.7rem;
+    border: solid
 }
 
-.slide-prev{
+.text-partition h2{
+    font-weight: lighter;
+}
+
+.text-partition figcaption{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    font-size: 1.5rem;
+}
+
+
+
+/* footer */
+
+footer{
     position: absolute;
-    left: 10px;
+    display: block;
+    box-sizing: border-box;
+    margin-top: auto;
+    background-color: #242a2c;
+    color: #454e51;
+    height: auto;
 }
