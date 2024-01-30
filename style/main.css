@@ -3,6 +3,7 @@
 
 html{
     font-size: 10px;
+    box-sizing: border-box;
 }
 
 h1{
@@ -61,10 +62,32 @@ p{
     padding: 15px;
 }
 
+.arrow{
+    color: #FFF;
+    font-size: 4rem;
+}
+
+.arrow-next{
+    position: absolute;
+    right: 10px;
+}
+
+.arrow-prev{
+    position: absolute;
+    left: 10px;
+}
+
+.hidden{
+    visibility: hidden;
+    opacity: 0;
+    overflow: hidden;
+}
+
 
 /* começa estilização do header */
 header{
     position: fixed;
+    z-index: 1;
     top: 0;
     left: 0;
     width: 100%;
@@ -259,20 +282,93 @@ header button{
 }
 
 .images{
+    box-sizing: border-box;
     width: 100%;
+}
+.images a{
+    box-sizing: border-box;
+    margin: 0;
 }
 
 .images a img{
     width: 100%;
+    height: 100%;
 }
 
 /* laptop section */
-.laptop-slide img{ 
-    height: auto;
+
+#laptop-section{
     width: 100%;
+    box-sizing: border-box;
+    background-color: #242a2c;
+    height: 400px;
+    margin-top: -4px;
+    padding-top: 35px;
+}
+
+.laptop-slide{
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    height: 350px;
+    display: flex;
+    align-items: center;
+
 }
 
 .laptop-slide figure{
-    
+    position: absolute;
 }
 
+.laptop-slide figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* text section */
+
+.text {
+    height: auto;
+    margin-bottom: auto;
+    display: flex;
+    align-items: center;
+    color: #FFF;
+    border: solid
+
+}
+
+
+
+.text-partition{
+    width: 77%;
+    display: block;
+    margin: 50px auto 0;
+    font-size: 1.7rem;
+    border: solid
+}
+
+.text-partition h2{
+    font-weight: lighter;
+}
+
+.text-partition figcaption{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    font-size: 1.5rem;
+}
+
+
+
+/* footer */
+
+footer{
+    position: absolute;
+    display: block;
+    box-sizing: border-box;
+    margin-top: auto;
+    background-color: #242a2c;
+    color: #454e51;
+    height: auto;
+}
