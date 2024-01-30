@@ -65,15 +65,14 @@ p{
 .arrow{
     color: #FFF;
     font-size: 4rem;
+    position: absolute;
 }
 
 .arrow-next{
-    position: absolute;
     right: 10px;
 }
 
 .arrow-prev{
-    position: absolute;
     left: 10px;
 }
 
@@ -301,7 +300,8 @@ header button{
     width: 100%;
     box-sizing: border-box;
     background-color: #242a2c;
-    height: 400px;
+    min-height: 400px;
+    height: auto;
     margin-top: -4px;
     padding-top: 35px;
 }
@@ -329,34 +329,40 @@ header button{
 /* text section */
 
 .text {
-    height: auto;
-    margin-bottom: auto;
     display: flex;
+    box-sizing: border-box;
+    justify-content: center;
     align-items: center;
+
+    border-bottom: solid 10px rgb(71, 141, 123);
+    min-height: 340px;
+    height: auto;
+
     color: #FFF;
-    border: solid
-
 }
 
-
-
-.text-partition{
-    width: 77%;
-    display: block;
-    margin: 50px auto 0;
-    font-size: 1.7rem;
-    border: solid
-}
-
-.text-partition h2{
+.text-format{
+    position: relative;
+    min-height: 340px;
+    width: 80%;
+    box-sizing: border-box;
     font-weight: lighter;
 }
 
-.text-partition figcaption{
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
-    font-size: 1.5rem;
+.text-partition{
+    position: absolute;
+    margin: 20px 0 0 0;
+    min-height: 340px;
+    line-height: 35px;
+}
+
+
+.text-format figcaption{
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.7em;
 }
 
 
