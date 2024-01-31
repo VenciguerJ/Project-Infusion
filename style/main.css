@@ -79,7 +79,8 @@ p{
 .hidden{
     visibility: hidden;
     opacity: 0;
-    overflow: hidden;
+    position: absolute;
+    border: solid;
 }
 
 
@@ -337,48 +338,42 @@ header button{
 /* text section */
 
 .text {
-    position: relative;
     display: flex;
     box-sizing: border-box;
     justify-content: center;
     align-items: center;
 
     border-bottom: solid 10px rgb(71, 141, 123);
-
     height: auto;
+    min-height: 400px;
     color: #FFF;
 }
 
-.text-format{
-    position: relative;
-    min-height: 340px;
+.text-format {
     height: auto;
     width: 80%;
     box-sizing: border-box;
     font-weight: lighter;
 }
 
-.text-partition{
-    /* position: absolute; */
+.text-partition {
     box-sizing: border-box;
-
-    min-height: 340px;
-    line-height: 35px;
-    padding: 30px 0 70px;
-
-    margin: 0;
+    height: auto;
+    padding: 30px 0 0;
+    line-height: 1.5;
 }
 
-.text-partition h2{
+.text-partition h2 {
     font-weight: lighter;
 }
 
-.text-partition figcaption{
+.text-partition figcaption {
     text-align: center;
     width: 100%;
-
     font-size: 0.7em;
+    margin-top: 60px
 }
+
 
 /* footer */
 
@@ -412,4 +407,6 @@ footer{
     .laptop-slide{
         height: 550px;
     }
+
+
 }
