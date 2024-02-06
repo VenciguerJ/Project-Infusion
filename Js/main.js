@@ -5,6 +5,10 @@
     //DOM
 
     var $menuButtom = document.querySelector('#js-menu-buttom');
+
+    //DOM
+
+    var $menuButtom = document.querySelector('#js-menu-buttom');
     var $body = document.querySelector('body');
     var $menu = document.querySelector('.menu-list');
 
@@ -13,6 +17,22 @@
 
     $menuButtom.addEventListener('click', alteraMenu)
     window.addEventListener('resize', confereMenuAtivado)
+
+
+    // FUNÇÕES DE EVENTO
+    var $next =document.querySelectorAll('.js-next');
+    var $prev =document.querySelectorAll('.js-prev');
+
+
+    // EVENTOS
+
+    $menuButtom.addEventListener('click', alteraMenu)
+    window.addEventListener('resize', confereMenuAtivado)
+
+
+    
+    $next[0].addEventListener('click', showNextContent); 
+    $prev[0].addEventListener('click', showNextContent);
 
 
     // FUNÇÕES DE EVENTO
@@ -41,6 +61,33 @@
         }
 
     }
+
+    }
+
+
+    var actualPosition = 0
+    function showNextContent(evt){
+        var laptop = $next[0] || $prev[0];
+        var text = $next[1];
+        console.log(evt.currentTarget);
+
+        if(evt.currentTarget == laptop){
+            //evento Laptop
+            var $laptopFigure = document.querySelectorAll('.js-laptop-figure');
+            console.log(evt.currentTarget);
+        }
+        if(evt.currentTarget == text){
+            // evento text
+        }
+    }
+    function showPrevContent(evt){
+        var laptop = $prev[0];
+        var text = $prev[1]
+        var actualPosition = 0
+    }
+
+    //testes
+
 
     //testes
 
