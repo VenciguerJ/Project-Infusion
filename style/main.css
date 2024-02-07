@@ -326,8 +326,9 @@ header button{
     overflow: hidden;
 }
 
-.laptop-slide figure{
+.laptop-figure{
     position: absolute;
+    transition: all .5s;
 }
 
 .laptop-slide figure img{
