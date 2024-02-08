@@ -47,32 +47,40 @@
     }
 
     function showNextContent(evt){
-        var laptop = $next[0];
-        var text = $next[1];
-        if(evt.currentTarget == laptop){
+        var evento = evt.currentTarget;
+        var nextLaptop = $next[0];
+        var prevLaptop = $prev[0];
+        var nextText = $next[1];
+        var prevText = $prev[1];
+
+        if(evento == nextLaptop || evento == prevLaptop){
             //evento Laptop
             var $laptopFigure = document.querySelectorAll('.js-laptop-figure');
             var actualPosition = returnShowedPosition($laptopFigure);
-            actualPosition = alteraSlide('proximo', $laptopFigure, actualPosition);
+            if(evento == nextLaptop){
+                actualPosition = alteraSlide('proximo', $laptopFigure, actualPosition);
+            }
+            if(evento == prevLaptop){
+                actualPosition = alteraSlide('anterior', $laptopFigure, actualPosition);
+            }
         }
-        if(evt.currentTarget == text){
+        if(evento == nextText || evento == prevText){
             // evento text
             var $textPartition = document.querySelectorAll('.text-partition');
-            console.log($textPartition[1] != document.querySelector('.hidden'))
             var actualPosition = returnShowedPosition($textPartition);
-            actualPosition = alteraSlide('proximo', $textPartition, actualPosition);
-        }
-    }
 
-    function showPrevContent(evt){
-        var laptop = $prev[0];
-        var text = $prev[1]
-        var actualPosition = 0
+            if(evento == nextText){
+                actualPosition = alteraSlide('proximo', $textPartition, actualPosition);
+            }
+            if(evento == prevText){
+                actualPosition = alteraSlide('anterior', $textPartition, actualPosition);
+            }
+        }
     }
 
     function returnShowedPosition(positions){ // mostra o index que não possui a classe hidden
         for(var i=0;positions[i];i++){
-            if(positions[i] != document.querySelector('.hidden')){
+            if(!positions[i].classList.contains('hidden')){
                 var showedPosition = i;
             }
         }
@@ -82,6 +90,15 @@
         if(direcao === 'proximo'){
             arr[position].classList.add('hidden');
             position ++;
+
+            if(position >= arr.length){
+                position = 0;
+            }
+            arr[position].classList.remove('hidden');
+        }
+        if(direcao ==='anterior'){
+            arr[position].classList.add('hidden');
+            position--;
 
             if(position >= arr.length){
                 position = 0;

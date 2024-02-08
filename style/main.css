@@ -80,7 +80,6 @@ p{
     visibility: hidden;
     opacity: 0;
     position: absolute;
-    border: solid;
 }
 
 
@@ -140,6 +139,7 @@ header button{
     margin: 0;
     padding: 0;
     height: 60px;
+    color: #ccc;
 }
 
 .menu-list a{
@@ -338,6 +338,16 @@ header button{
 }
 
 /* text section */
+@keyframes invisivel {
+    0% {
+      opacity: 1; /* Inicialmente visível */
+    }
+    100% {
+      opacity: 0; /* Torna-se invisível */
+    }
+  }
+    
+  
 
 .text {
     display: flex;
@@ -359,6 +369,7 @@ header button{
 }
 
 .text-partition {
+    transition: opacity 0.3s ease-in-out .1s;
     box-sizing: border-box;
     height: auto;
     padding: 30px 0 0;
@@ -432,16 +443,18 @@ footer{
 
     .menu-list{
         display: flex;
-        justify-content: space-around;
         width: 80%;
         height: 70px;
         list-style: none;
         padding: 0;
         margin: 0 0 0 20%;
+        font-weight: 400;
     }
 
     .menu-list li{
         height: auto;
+        font-size: .9em;
+        margin-right: 1%;
     }
     
     .menu-list a{
@@ -449,8 +462,8 @@ footer{
         height: 100%;
         padding: 15px;
         font-size: 1.5em;
-        font-weight: bolder;
-        color:#242a2c;
+        font-weight: 600;
+        color:#555454cc;
     }
     
     #people-section{
@@ -465,6 +478,10 @@ footer{
         border: solid .5px #ccc;
         width: 23%;
         height: auto;
+    } 
+
+    .people:hover{
+        border: solid;
     }
 
     .people-banner{
