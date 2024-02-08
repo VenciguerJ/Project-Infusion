@@ -478,10 +478,20 @@ footer{
         border: solid .5px #ccc;
         width: 23%;
         height: auto;
+        box-sizing: border-box;
     } 
 
     .people:hover{
-        border: solid;
+        border: solid rgb(99, 198, 174);
+
+    }
+
+    .people:hover .people-image{
+        margin-top: -100px;
+    }
+
+    .people:hover h2, .people:hover p{
+        color: rgb(99, 198, 174);
     }
 
     .people-banner{
@@ -506,4 +516,14 @@ footer{
         padding: 0;
         box-sizing: border-box;
     }
+    .dark-button:hover{
+        background-color: rgb(104, 104, 104);
+        transition: all .3s;
+    }
+    .light-button:hover{
+        background-color: rgb(134, 212, 193);
+        transition: all .3s;
+    }
+
+    
 }
