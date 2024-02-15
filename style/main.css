@@ -1,8 +1,8 @@
 /* css do projeto final */
 /* definindo padrões */
 
-@import url('http://fonts.googleapis.com/css?family=Sintony:400,700');
-@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Sintony:400,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
 
 
 html{
@@ -29,11 +29,11 @@ p{
 /* modelos repetidos */
 
 .default-text{
-    font-family: 'open sans';
+    font-family: 'open sans', sans-serif;
 }
 
 .alternative-text{
-    font-family: 'sintony';
+    font-family: 'sintony', sans-serif;
 }
 
 .centralized-text{
