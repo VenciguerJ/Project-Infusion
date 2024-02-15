@@ -15,6 +15,7 @@
 
     $menuButtom.addEventListener('click', alteraMenu)
     window.addEventListener('resize', confereMenuAtivado)
+    window.addEventListener('load', confereMenuAtivado)
 
     for (let i = 0;$next[i]; i++) {
         $next[i].addEventListener('click', showNextContent);
@@ -28,9 +29,13 @@
     function confereMenuAtivado(){
         const LARGURA_MENU_DESKTOP = 1024;
         var widthWindow = parseFloat(getComputedStyle($body).width);
-        
+
+    
+        if(widthWindow > LARGURA_MENU_DESKTOP){
+            $body.classList.remove('start-menu-effect')
+        }
         if(widthWindow < LARGURA_MENU_DESKTOP){
-            alteraMenu();
+            $body.classList.add('start-menu-effect')
         }
 
     }
